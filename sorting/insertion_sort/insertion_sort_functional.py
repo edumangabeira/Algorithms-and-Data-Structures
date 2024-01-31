@@ -1,8 +1,8 @@
-def sort_list(unsorted_list, j):
+def insertion_sort(unsorted_list, j):
     if j < len(unsorted_list):
         j = j + 1
         sort_sublist(unsorted_list, 1)
-        sort_list(unsorted_list, j)
+        insertion_sort(unsorted_list, j)
     sorted_list = unsorted_list
     return sorted_list
 
@@ -17,7 +17,7 @@ def sort_sublist(unsorted_list, i):
 
 unsorted_list = [5, 7, 8, 2, 4]
 print(unsorted_list)
-print(sort_list(unsorted_list, 1))
+print(insertion_sort(unsorted_list, 1))
 
 
 
