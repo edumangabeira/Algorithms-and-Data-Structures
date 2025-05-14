@@ -1,8 +1,8 @@
 def merge(A, p, q ,r):
     n1 = q - p + 1
     n2 = r - q
-    L = list(range(1, n1))
-    R = list(range(1, n2))
+    L = list(range(n1+1))
+    R = list(range(n2+1))
     for i in range(n1):
         L[i] = A[p + i - 1]
         print(f"L[i]: {L[i]}")
